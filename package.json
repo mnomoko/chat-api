@@ -1,0 +1,35 @@
+{
+  "name": "message-api",
+  "version": "1.0.0",
+  "description": "Message backend for Message-App",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chet",
+    "message"
+  ],
+  "author": "Mamadou NOMOKO",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.1",
+    "dotenv": "^2.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^7.4.1",
+    "morgan": "^1.9.1",
+    "node-pre-gyp": "0.14.0",
+    "oauth2-server": "^3.0.1",
+    "pg": "^7.18.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1"
+  }
+}

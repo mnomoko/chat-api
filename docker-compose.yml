@@ -1,0 +1,21 @@
+version: "3"
+services:
+#  app:
+#    container_name: smoothieapi-app
+#    build: .
+#    environment:
+#      DATABASE_URL: postgres://docker:docker@messageapi-postgresql:5432/message-db
+#    ports:
+#      - 8085:4000
+#    command: npm start
+
+  db:
+    container_name: messageapi-postgresql
+    image: postgres:alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=message-db
+#    volumes:
+#      - ./server/database/sql/:/docker-entrypoint-initdb.d
